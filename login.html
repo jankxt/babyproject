@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ</title>
+    <link rel="stylesheet" href="styles.css"> <!-- เชื่อมโยงไฟล์ CSS สำหรับการตกแต่ง -->
+    <style>
+        /* styles.css */
+
+/* ตั้งค่า body และพื้นที่ส่วนกลาง */
+body {
+    background-image: url('imge/e26a2260f4e56f737c1992b82685b910.jpg'); 
+   background-size: cover; /* ปรับขนาดภาพพื้นหลังให้เต็มพื้นที่ */
+   background-position: center;  /* จัดตำแหน่งภาพกลาง */
+
+/* หรือใช้ภาพพื้นหลัง */
+/* background-image: url('path/to/your/background-image.jpg'); */
+/* background-size: cover; */ /* ปรับขนาดภาพพื้นหลังให้เต็มพื้นที่ */
+/* background-position: center; */ /* จัดตำแหน่งภาพกลาง */
+
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #eb42b5;
+    outline: none;
+}
+
+.btn {
+    background-color: #f645d5;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e64ea4;
+}
+
+p {
+    margin-top: 20px;
+}
+
+a {
+    color: #e33fad;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>เข้าสู่ระบบ</h1>
+        <form action="index.php" method="POST">
+            <div class="form-group">
+                <label for="username">ชื่อผู้ใช้:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">เข้าสู่ระบบ</button>
+        </form>
+        <p>ยังไม่มีบัญชี? <a href="register.html">สมัครสมาชิก</a></p>
+    </div>
+</body>
+</html>

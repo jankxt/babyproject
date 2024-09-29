@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เกี่ยวกับเรา</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('imge/e26a2260f4e56f737c1992b82685b910.jpg'); /* เปลี่ยน URL เป็นภาพพื้นหลังที่ต้องการ */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: rgba(146, 131, 131, 0.658);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(255, 192, 203, 0.9);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header img {
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #bd076c;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            background-color: rgba(255, 192, 203, 0.7);
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #910569;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #f3a2bd;
+            color: #f03a3a;
+        }
+
+        .about-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: rgba(167, 156, 156, 0.518);
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-section h2 {
+            font-size: 2.5em;
+            color: #bd076c;
+        }
+
+        .member-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .member {
+            width: 350px;
+            text-align: center;
+            background-color: rgba(255, 192, 203, 0.8);
+            border-radius: 10px;
+            padding: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .member img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .member h3 {
+            font-size: 1.5em;
+            color: #bd076c;
+        }
+
+        .member p {
+            font-size: 1.2em;
+        }
+
+        .member:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            background-color: rgba(171, 161, 161, 0.3);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+            font-size: 1.5em;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- แถบหัวโลโก้และชื่อร้าน -->
+    <header>
+        <img src="imge/large (2).png" alt="โลโก้ร้าน">
+        <h1>GOODIES PURFUME</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="register.html">Login</a></li>
+            <li><a href="catalog.php">Products</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </nav>
+
+    <div class="about-section">
+        <h2>Member</h2>
+        <div class="member-list">
+            <div class="member">
+                <img src="imge/457383620_2361069520951033_1176528898876720455_n.jpg" alt="" />
+                <h3><a href="102.php" style="color: #bd076c; text-decoration: none;">654274102</a></h3>
+                <p>นางสาวคีร์ระดา เทพพิทักษ์  ทำหน้าที่ : จัดทำเว็บไซต์และออกแบบ</p>
+            </div>
+            <div class="member">
+                <img src="imge/456614543_508233468820163_7225155231032955045_n.jpg" alt="" />
+                <h3><a href="106.php" style="color: #bd076c; text-decoration: none;">654274106</a></h3>
+                <p>นางสาวณิชาภัท  ทำหน้าที่ร ขำพวง : ออกแบบและหาข้อมูล</p>
+            </div>
+            <div class="member">
+                <img src="imge/459368736_903962701637023_8242035061663190445_n.jpg" alt="" />
+                <h3><a href="108.php" style="color: #bd076c; text-decoration: none;">654274108</a></h3>
+                <p>นายทัศน์พล ยอดใจ  ทำหน้าที่ : ทำรายงาน</p>
+            </div>
+            <div class="member">
+                <img src="imge/307319845_1749703322069707_87284461336951236_n.jpg" alt="" />
+                <h3><a href="116.php" style="color: #bd076c; text-decoration: none;">654274116</a></h3>
+                <p>นายศักดิธัส มิตรดี  ทำหน้าที่ : ทำรายงาน</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Goodies.co | สงวนลิขสิทธิ์</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก</title>
+    <link rel="stylesheet" href="styles.css"> <!-- ลิงก์ไปยังไฟล์ CSS -->
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('imge/e26a2260f4e56f737c1992b82685b910.jpg'); /* เปลี่ยนเป็นชื่อไฟล์รูปภาพของคุณ */
+    background-size: cover; /* ทำให้รูปภาพเต็มหน้าจอ */
+    background-position: center; /* จัดตำแหน่งรูปภาพให้ตรงกลาง */
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center; /* จัดตำแหน่งให้ชิดขวา */
+    padding: 20px;
+    color: #ffffff;
+}
+
+.logo {
+    width: 200px; /* ขนาดโลโก้ */
+    height: 200px; /* ขนาดโลโก้ */
+    border-radius: 50%; /* ทำให้โลโก้เป็นวงกลม */
+    object-fit: cover; /* ทำให้รูปภาพไม่ผิดรูป */
+}
+
+.brand-name {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #e3ddde; /* สีชื่อแบรนด์ */
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ff69b4; /* กรอบสีชมพู */
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.9); /* พื้นหลังโปร่งใส */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* เพิ่มความลึก */
+}
+
+h1 {
+    text-align: center;
+    color: #ed45a2; /* สีม่วงเข้ม */
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ff69b4; /* กรอบสีชมพู */
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input-field:focus {
+    border-color: #e949a1; /* สีม่วงเข้มเมื่อโฟกัส */
+    box-shadow: 0 0 5px rgba(226, 21, 131, 0.5); /* เพิ่มเงา */
+}
+
+.button {
+    width: 100%;
+    padding: 12px;
+    background-color: #cd5aa5; /* สีม่วงเข้ม */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* เพิ่มเอฟเฟกต์การเคลื่อนไหว */
+}
+
+.button:hover {
+    background-color: #d62f9c; /* สีม่วงเข้มกว่าเมื่อ hover */
+    transform: translateY(-2px); /* ยกขึ้นเล็กน้อย */
+}
+
+.footer {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 200px;
+    font-size: 20px;
+}
+
+.footer a {
+    color: #ff69b4; /* สีชมพูสำหรับลิงก์ */
+    text-decoration: none; /* ไม่มีขีดเส้นใต้ */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* ขีดเส้นใต้เมื่อ hover */
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="imge/large (2).png" alt="โลโก้แบรนด์"> <!-- เปลี่ยนเป็นชื่อไฟล์โลโก้ของคุณ -->
+        <h1 class="brand-name">GOODIES</h1>
+    </div>
+
+    <div class="form-container">
+        <form method="POST" action="register.php"> <!-- เพิ่ม action ที่ส่งไปยัง register.php -->
+        <h1>สมัครสมาชิก</h1>
+        <label class="label" for="username">ชื่อผู้ใช้:</label>
+        <input class="input-field" type="text" id="username" name="username" required>
+
+        <label class="label" for="password">รหัสผ่าน:</label>
+        <input class="input-field" type="password" id="password" name="password" required>
+
+        <label class="label" for="email">อีเมล:</label>
+        <input class="input-field" type="email" id="email" name="email" required>
+
+        <button class="button" type="submit">สมัครสมาชิก</button>
+    </form>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 GOODIES. สงวนสิทธิ์.</p>
+        
+    </div>
+</body>
+</html>
